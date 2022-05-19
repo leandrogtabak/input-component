@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500&display=swap');
+
+/*General styles*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+    outline: none;
+}
+
+.container-button {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 200px;
+
+}
+
+#label {
+    order: 1;
+}
+
+#input {
+    order: 2;
+}
+
+#textarea {
+    order: 2;
+}
+
+#helperText {
+    order: 3;
+}
+
+.start-icon {
+    position: absolute;
+    top: 38px;
+    left: 12px;
+    font-size: 24px;
+    color: #828282;
+
+}
+
+.end-icon {
+    position: absolute;
+    top: 38px;
+    right: 12px;
+    font-size: 24px;
+    color: #828282;
+
+}
+
+/*Input + label by default*/
+.label {
+
+    font-weight: 400;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 12px;
+    color: #333333;
+    margin-bottom: 4px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.input {
+    font-family: 'Noto Sans JP', sans-serif;
+    padding: 18px 0;
+    padding-left: 12px;
+
+    border: 1px solid #828282;
+    border-radius: 8px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    color: #333333;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.helperText {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    font-size: 10px;
+    color: #828282;
+    margin-top: 4px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+
+.input:hover {
+    border: 1px solid #333333;
+}
+
+.input:focus {
+    border: 1px solid #2962FF;
+
+}
+
+.input:focus+.label {
+
+    color: #2962FF;
+
+}
+
+/*Input + label error type; it goes below the default type in order to overwrite the default style*/
+
+.label__error {
+    color: #D32F2F;
+}
+
+.helperText__error {
+    color: #D32F2F;
+}
+
+
+.input__error {
+    border: 1px solid #D32F2F;
+}
+
+.input__error:hover~.label__error {
+    color: #333333;
+}
+
+.input__error:hover~.helperText__error {
+    color: #333333;
+}
+
+.input__error:focus {
+    border: 1px solid #D32F2F;
+}
+
+.input__error:focus+.label__error {
+    color: #D32F2F;
+}
+
+.input__error:focus~.helperText__error {
+    color: #D32F2F;
+}
+
+/*Input + label disabled type; put always at last to overwrite all other styles*/
+
+.label__disabled {
+    color: #333333;
+}
+
+.input__disabled {
+
+    background: #F2F2F2;
+    border: 1px solid #E0E0E0;
+
+}
+
+.input__disabled:hover {
+
+    border: 1px solid #E0E0E0;
+}
+
+/*Input paddings if there are icons at start and end*/
+
+.input__start-icon {
+    padding-left: 42px;
+}
+
+.input__end-icon {
+    padding-right: 42px;
+}
+
+/* sizing */
+
+.input__size-sm {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.input__size-sm~.start-icon {
+    top: 30px;
+}
+
+.input__size-sm~.end-icon {
+    top: 30px;
+}
+
+.input__size-md {
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+/* fullWidth */
+
+.input__fullWidth {
+    width: 100%;
+}
+
+/* multiline */
+.multiline {
+    resize: none;
+}

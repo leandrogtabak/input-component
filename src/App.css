@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+
+* {
+    box-sizing: border-box;
+    color: inherit;
+    font: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2rem;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 72px;
+}
+
+p {
+    width: 100%;
+    text-align: center;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+
+}
+
+.container {
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+
+    grid-template-rows: auto 1fr auto;
+}
+
+.input-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: start;
+    justify-content: center;
+    gap: 12px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+}
+
+.myInput {
+    margin: 12px;
+}
+
+
+.footer {
+    text-align: center;
+}
+
+.footer {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    color: rgb(189, 189, 189);
+    padding-bottom: 15px;
+    margin-top: 5%;
+
+
+}
+
+.footer a {
+    color: rgb(189, 189, 189);
+    font-size: 1rem;
+
+}
+
+@media (max-width:1020px) {
+    .input-grid {
+
+        grid-template-columns: 1fr 1fr 1fr;
+
+        gap: 10px;
+    }
+}
+
+@media (max-width:768px) {
+    .input-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 8px;
+    }
+}
+
+
+@media (max-width:400px) {
+    .input-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+}
