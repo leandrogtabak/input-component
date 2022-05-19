@@ -9,62 +9,62 @@ function App() {
 
         <div className='input-grid'>
           <div className='card colors'>
-            <p>{`<Input />`}</p>
+            <p className='subtitle'>{`<Input />`}</p>
             <Input className='myInput' labelText='Label' placeholder='Placeholder' />
           </div>
 
           <div className='card colors'>
-            <p>{`<Input error />`}</p>
+            <p className='subtitle'>{`<Input error />`}</p>
             <Input className='myInput' labelText='Label' placeholder='Placeholder' error />
           </div>
 
           <div className='card colors'>
-            <p>{`<Input disabled />`}</p>
+            <p className='subtitle'>{`<Input disabled />`}</p>
             <Input className='myInput' labelText='Label' placeholder='Placeholder' disabled />
           </div>
 
           <div className='card colors'>
-            <p>{`<Input helperText=”Some interesting text” />`}</p>
+            <p className='subtitle'>{`<Input helperText=”Some interesting text” />`}</p>
             <Input className='myInput' labelText='Label' placeholder='Placeholder' helperText='Some interesting text' />
           </div>
 
           <div className='card colors'>
-            <p>{`<Input helperText='Some interesting text' error />`}</p>
+            <p className='subtitle'>{`<Input helperText='Some interesting text' error />`}</p>
             <Input className='myInput' labelText='Label' placeholder='Placeholder' helperText='Some interesting text' error />
           </div>
 
           <div className='card colors'>
-            <p>{`<Input startIcon />`}</p>
+            <p className='subtitle'>{`<Input startIcon />`}</p>
             <Input className='myInput' labelText='Label' placeholder='Placeholder' startIcon='call' />
           </div>
 
           <div className='card colors'>
-            <p>{`<Input endIcon />`}</p>
+            <p className='subtitle'>{`<Input endIcon />`}</p>
             <Input className='myInput' labelText='Label' placeholder='Placeholder' endIcon='lock' />
           </div>
 
           <div className='card colors'>
-            <p>{`<Input value=”text” />`}</p>
+            <p className='subtitle'>{`<Input value=”text” />`}</p>
             <Input className='myInput' labelText='Label' placeholder='Placeholder' value='text' />
           </div>
 
           <div className='card colors'>
-            <p>{`<Input size=”sm” />`}</p>
+            <p className='subtitle'>{`<Input size=”sm” />`}</p>
             <Input className='myInput' labelText='Label' placeholder='Placeholder' size='sm' />
           </div>
 
           <div className='card colors'>
-            <p>{`<Input size=”md” />`}</p>
+            <p className='subtitle'>{`<Input size=”md” />`}</p>
             <Input className='myInput' labelText='Label' placeholder='Placeholder' size='md' />
           </div>
 
           <div className='card colors'>
-            <p>{`<Input fullWidth />`}</p>
+            <p className='subtitle'>{`<Input fullWidth />`}</p>
             <Input className='myInput' labelText='Label' placeholder='Placeholder' fullWidth value='text' />
           </div>
 
           <div className='card colors'>
-            <p>{`<Input multiline row=”4” />`}</p>
+            <p className='subtitle'>{`<Input multiline row=”4” />`}</p>
             <Input className='myInput' labelText='Label' placeholder='Placeholder' multiline row='4' />
           </div>
         </div>
